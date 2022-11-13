@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:valid ~ .input-text,
+input[type="password"]:focus ~ .input-password,
+input[type="password"]:valid~ .input-password,
+input[type="email"]:focus ~ .input-email,
+input[type="email"]:valid~ .input-email,
+input[type="number"]:focus ~ .input-text,
+input[type="number"]:valid~ .input-text,
+textarea[type="text"]:valid~ .textarea-text,
+textarea[type="text"]:focus~ .textarea-text{
+  @apply text-blue-500 bg-[rgba(0,0,0,0.5)]  transform -translate-y-6 -translate-x-2 scale-75;
+}
+
+input[type="text"]:focus ~ .profile-input-text,
+input[type="text"]:valid~ .profile-input-text,
+textarea[type="text"]:valid~ .profile-textarea-text,
+textarea[type="text"]:focus~ .profile-textarea-text{
+  @apply text-blue-500 bg-white  transform -translate-y-6 -translate-x-2 scale-75;
+}
